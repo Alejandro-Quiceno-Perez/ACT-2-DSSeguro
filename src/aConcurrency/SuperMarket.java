@@ -6,7 +6,8 @@ import Entitys.Product;
 
 /**
  * Clase principal para simular el funcionamiento del supermercado.
- * Gestiona clientes, productos y el procesamiento de compras por parte de las cajeras.
+ * Gestiona clientes, productos y el procesamiento de compras por parte de las
+ * cajeras.
  */
 public class SuperMarket {
        public static void main(String[] args) {
@@ -32,6 +33,6 @@ public class SuperMarket {
 
               // Mostrar tiempo total de la simulación
               System.out.println("Simulación completa. Tiempo total: " +
-                      (System.currentTimeMillis() - startTime) / 1000 + " segundos.");
+                            (System.currentTimeMillis() - startTime) / 1000 + " segundos.");
        }
 }
