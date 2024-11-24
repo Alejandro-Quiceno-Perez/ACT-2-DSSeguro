@@ -40,7 +40,7 @@ public class CashierProducts implements Runnable {
 
               long totalTime = (System.currentTimeMillis() - startTime) / 1000;
               System.out.println("Cajera -> " + this.name + " Ha terminado de procesar al cliente -> "
-                      + client.getName() + " En el tiempo: " + totalTime + "seg");
+                            + client.getName() + " En el tiempo: " + totalTime + "seg");
               System.out.println("---------------------------------------------------------------------------------");
        }
 
@@ -54,8 +54,8 @@ public class CashierProducts implements Runnable {
               try {
                      Thread.sleep(1000); // Simula tiempo de procesamiento por producto
                      System.out.println("Producto " + productCount + ": " + product.getName() +
-                             " | Cantidad: " + product.getQuantity() +
-                             " | Precio Total: " + product.getTotalCost());
+                                   " | Cantidad: " + product.getQuantity() +
+                                   " | Precio Total: " + product.getTotalCost());
               } catch (InterruptedException e) {
                      System.out.println("Error en el procesamiento del producto: " + product.getName());
                      Thread.currentThread().interrupt(); // Restaurar el estado de interrupción
